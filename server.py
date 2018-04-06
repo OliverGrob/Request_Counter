@@ -18,7 +18,7 @@ def read_from_txt():
 
 def write_to_txt(list_of_requests):
     with open(os.path.realpath("request_counts.txt"), "w") as data:
-        data.write("GET:" + str(list_of_requests["GET"]) + "\n")
+        data.write("\"GET:" + str(list_of_requests["GET"]) + "\n")
         data.write("POST:" + str(list_of_requests["POST"]) + "\n")
         data.write("DELETE:" + str(list_of_requests["DELETE"]) + "\n")
         data.write("PUT:" + str(list_of_requests["PUT"]) + "\"")
