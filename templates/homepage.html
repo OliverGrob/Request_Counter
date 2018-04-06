@@ -21,7 +21,7 @@
             <a href="{{ url_for('request_counter') }}" style="font-size: 40px">GET</a>
         </div>
         <div><br>
-            <form action="/request-counter" method="post">
+            <form action="{{ url_for('request_counter') }}" method="post">
                 <input type="submit" value="Post" style="font-size: 40px">
             </form>
         </div>
